@@ -1,0 +1,313 @@
+body {
+    background-image: url("src/bg.jpg");
+   
+    
+    background-attachment: fixed;
+}
+
+/*navigation bars*/
+
+#nav {
+    
+    display: block;
+    margin-top: 10px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    border-bottom: 4px solid rgb(70, 70, 238);
+    position: absolute; 
+    
+    
+}
+
+
+.nav-bar li {
+    float: left;
+    display: inline;
+    /* background-color: darkred; */
+}
+
+.nav-bar li a {
+    font-size: 27px;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+.nav-bar li a:hover {
+    color: rgb(5, 5, 5);
+    /* background-color: rgb(56, 105, 212); */
+    /* background-color: #F64C72; */
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+
+
+
+    transition: 500ms;
+    border-radius: 10px;
+}
+
+
+.active {
+    background-color: rgb(70, 70, 238);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*Login bars*/
+
+.login-bar {
+    list-style-type: none;
+    float: left;
+    padding-left: 10px;
+    position: relative;
+}
+
+.login-bar li {
+    display: inline-block;
+    
+    /* margin-left: 10px; */
+    
+}
+
+
+.login {
+   
+    margin-left: 900px;
+}
+
+
+
+/* ----------- special-offers.html and discount.html ------- */
+
+
+
+/*Topic bars*/
+
+#topic {
+    /* color: #f8f8f8; font-family: 'Enriqueta', arial, serif;
+     font-size: 32px;
+      font-weight: 500;
+       line-height: 32px;
+        margin: 0 0 24px; */
+        color: #fff; 
+        font-family: 'Righteous', cursive;
+        font-size: 42px;
+        font-weight: normal;
+        line-height: 60px; margin: 10px 0 20px;
+        text-transform: uppercase; 
+        text-shadow: 2px 2px 0 #000;
+        margin: 10px 0 24px; 
+        text-align: center;
+   
+  
+}
+
+#topic h2 {
+ padding-top: 10px;
+   text-align: center;
+   color: antiquewhite;
+  
+}
+
+/* cards */
+
+.carts {
+    color: cornsilk;
+    display: block;
+    padding: 20px;
+    border:3px solid rgb(224, 221, 221);
+    position: relative;
+    top: 30px;
+    width: 70%;
+    border-radius: 4px;
+    margin: auto;
+    
+    
+}
+
+.carts div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: arial;
+    padding: 20px;
+    border: cornsilk 10px;
+    border:3px solid rgb(224, 221, 221);
+    transition: all 0.5s ease;
+    position: relative;
+    
+
+    
+}
+.carts div:not(.pic-border):hover  {
+    border:3px solid rgb(201, 39, 39);
+    background-color: rgb(37, 36, 33);
+    
+    
+}
+
+.carts input {
+    height: 30px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: -10px;
+    text-align: center;
+    width: 100px;
+    outline: none;
+    background-color: rgb(199, 177, 177);
+    border: none;
+    border-radius: 5px;
+   
+}
+
+/* Images */
+
+.carts div .main-pic {
+    height: auto;
+    width: 100%;
+
+}
+
+.carts .pic-border { 
+    border:3px solid rgb(224, 25, 25);
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: auto;
+    box-shadow: none;
+   
+    
+}
+/* Icons */
+
+.add-btn, .minus-btn {
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.add-btn:hover, .minus-btn:hover {
+    animation: pop 0.3s linear 1;
+    cursor: pointer;
+    
+}
+
+.add-btn:active, .minus-btn:active {
+    animation: pulse 0.5s ease-in
+}
+
+/*Buttons*/
+
+button {
+    /* background-color: rgb(0, 240, 168); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-size: 24px;
+    display: inline-block;
+	box-shadow: none;
+	appearance: none;
+	border: 0;
+	outline: 0;
+    height: 45px;
+	line-height: 42px;
+	padding: 0 30px;
+	font-size: 20px;
+	border-radius: 30px;
+	color: rgb(40, 45, 50);
+	cursor: pointer;
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+	user-select: none;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+button:active {
+    transform: scale(1.05, 1.05);
+}
+
+/* animations */
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    85%  {transform: scale(1.2);}
+  }
+
+  @keyframes pop{
+    50%  {transform: scale(1.1);}
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*text - styling*/
+
+.item_name {
+    font-size: 19px;
+    color: #f6f6f6; 
+    font-family: 'Orienta', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Orienta', sans-serif;
+
+}
+
+/* Discount styles */
+
+.strike {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;;
+    
+}
+
+.strike:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid rgb(185, 2, 2);
+    height: 50%;
+    height: calc(50% - 1px);
+    width: 100%;
+    transform: rotateZ(-16deg);
+}
+
+.discount-pic {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    top: -40px;
+    left: -40px;
+    z-index: 3;
+}
+
+

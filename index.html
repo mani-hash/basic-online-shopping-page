@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="action.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="file-index.js"></script>
+  </head>
+  <body>
+    <div id="nav">
+      <ul class="nav-bar">
+        <li><a id="dorm1" onclick="actADD(this); getId()" href="#">Home</a></li>
+        <li><a id="dorm2" class="active" onclick="actADD(this)" href="#">Category</a></li>
+        <li>
+          <a id="dorm3"  onclick="actADD(this)" href="#">Special Offers</a>
+        </li>
+        <li><a id="dorm4" onclick="actADD(this)" href="#">Contact us</a></li>
+        <li><a id="dorm5" onclick="actADD(this)" href="#">About us</a></li>
+      </ul>
+      <ul class="login-bar">
+        <li><button class="login" type="button">Login</button></li>
+        <li><button class="signup" type="button">Sign in</button></li>
+      </ul>
+    </div>
+    <div class="content-change" id="includeContent2"></div>
+  </body>
+</html>
