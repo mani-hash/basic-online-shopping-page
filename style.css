@@ -69,10 +69,16 @@ body {
     float: left;
     padding-left: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80%;
 }
 
 .login-bar li {
     display: inline-block;
+    position: relative;
+    padding: 4px;
+    left: 40px;
     
     /* margin-left: 10px; */
     
@@ -80,8 +86,17 @@ body {
 
 
 .login {
-   
-    margin-left: 900px;
+    position: relative;
+    
+    width: 160px;
+    
+}
+
+.signup {
+    position: relative;
+    width: 160px;
+    
+    
 }
 
 
@@ -310,4 +325,56 @@ p {
     z-index: 3;
 }
 
+/*Lower resolutions*/
 
+@media screen and (max-width: 1195px) {
+    .nav-bar li a {
+        font-size: 23px;
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .login-bar {
+        list-style-type: none;
+        float: left;
+        padding-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 80%;
+    }
+    
+    .login-bar li {
+        display: inline-block;
+        position: relative;
+        padding: 4px;
+        left: 40px;
+        
+        /* margin-left: 10px; */
+        
+    }
+    
+    
+    .login {
+        position: relative;
+        
+        width: 160px;
+        
+    }
+    
+    .signup {
+        position: relative;
+        width: 160px;
+        
+        
+    }
+    
+    
+    
+   
+}
